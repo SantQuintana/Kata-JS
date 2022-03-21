@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="pokedex.css">
+    
+</head>
+<body>
+
+    <header>
+        <div id="menuFijo">
+            <img src="Images/greyPokeball.png" alt="Grey Pokeball">
+            <h1>Pokedex LaunchX</h1>
+        </div>
+    </header>
+    
+    <section class="container">
+        <img src="Images/pokedex.jpg" alt="Pokedex" id="pokedex" > 
+        <img src="Images/pokeball.png" alt="Pokemon" id="pokeImg" >
+        <h2 id="pokeNameTitle"> Pokemon</h2><br>
+        <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+        <button onclick="fetchPokemon()">Buscar Pokemon</button>
+
+        <table id="stats">
+            <tr>
+                <th>HP</th>
+                <th>Att</th>
+                <th>Def</th>
+                <th>S.A</th>
+                <th>S.D</th>
+                <th>Spd</th>
+            </tr>
+            <tr>
+                <td id="ps">0</td>
+                <td id="attack">0</td>
+                <td id="defense">0</td>
+                <td id="spAttack">0</td>
+                <td id="spDefense">0</td>
+                <td id="speed">0</td>
+            </tr>
+        </table>
+
+        <table id="moves">
+            <tr>
+                <td id="move1"></td>
+                <td id="move2"></td>
+            </tr>
+            <tr>
+                <td id="move3"></td>
+                <td id="move4"></td>
+            </tr>
+        </table>
+
+        <h3 id="pokeType">type</h3>
+    </section>
+
+</body>
+<footer>
+    <script src="pokedex.js"></script>
+</footer>
+</html>
